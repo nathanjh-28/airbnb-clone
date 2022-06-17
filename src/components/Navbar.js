@@ -4,10 +4,10 @@ import logo from '../images/airbnb-logo.png';
 
 function Navbar() {
     return (
-        <div className="navbar">
-            <img src={logo} width="82px"></img >
-            <div className="navbar-bottom-border"></div>
-        </div>
+        <nav className="navbar">
+            <img src={logo} className=".nav--logo"></img >
+            {/* <div className="navbar-bottom-border"></div> */}
+        </nav>
     )
 }
 
