@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    padding: 1em;
+
+}
+
+.navbar-bottom-border {
+    border-bottom: 1px rgb(238, 238, 238) solid;
+    filter: drop-shadow(0 8px 4px #000);
+
+}
