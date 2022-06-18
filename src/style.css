@@ -50,3 +50,36 @@ nav {
     height: 56px;
     margin-top: .5em;
 }
+
+.card {
+    position: relative;
+    padding: .25em;
+    margin: .25em;
+}
+
+.grey {
+    color: #aaa;
+}
+
+.sizzle-blurb {
+    text-transform: uppercase;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    top: .75em;
+    left: .75em;
+    padding: .2em;
+
+}
+
+.card-image {
+    border-radius: 25px;
+}
+
+.card-footer {
+    /* display: flex; */
+}
+
+.bold {
+    font-weight: 700;
+}

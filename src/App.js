@@ -1,16 +1,18 @@
 import React from 'react';
 import './style.css';
 
-// Components
+/*       ----- Components -----          */
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Card from './components/Card'
 
 
 function App() {
     return (
         <div className="container">
             <Navbar />
-            <Hero />
+            {/* <Hero /> */}
+            <Card />
         </div>
     )
 }
