@@ -1,17 +1,12 @@
-import React from "react";
-import heroImage from '../images/photo-grid.png';
+import React from "react"
 
-function Hero() {
+export default function Hero() {
     return (
-        <div className="hero">
-            <img src={heroImage} className="hero-image"></img>
-            <div className="hero-text">
-                <h1>Online Experiences</h1>
-                <p>Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.
-                </p>
-            </div>
-        </div>
+        <section className="hero">
+            <img src="../images/photo-grid.png" className="hero--photo" />
+            <h1 className="hero--header">Online Experiences</h1>
+            <p className="hero--text">Join unique interactive activities led by
+                one-of-a-kind hosts—all without leaving home.</p>
+        </section>
     )
 }
-
-export default Hero;
