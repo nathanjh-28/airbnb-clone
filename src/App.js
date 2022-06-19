@@ -18,23 +18,19 @@ Challenge: Pass props to the Card component and display that data
 */
 
 export default function App() {
-    // <Hero />
 
     // ----- Card Mapping
     let cardsArr = data.map(card => {
         return (<Card
             key={card.id}
-            img={card.coverImg}
-            rating={card.stats.rating}
-            reviewCount={card.stats.reviewCount}
-            location={card.location}
-            title={card.title}
-            price={card.price} />)
+            card={card}
+        />)
     });
     // ----- JSX
     return (
         <div>
             <Navbar />
+            <Hero />
             <section className="cards-list">
                 {cardsArr}
             </section>
