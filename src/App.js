@@ -23,7 +23,7 @@ export default function App() {
     let cardsArr = data.map(card => {
         return (<Card
             key={card.id}
-            card={card}
+            {...card}
         />)
     });
     // ----- JSX
