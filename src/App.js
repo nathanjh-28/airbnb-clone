@@ -2,12 +2,8 @@ import React from "react"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
+import data from "./data"
 import "./style.css"
-
-// -- images
-import profilePic from "./images/katie-zaferes.png"
-import star from "./images/star.png"
-import logo from "./images/airbnb-logo.png"
 
 /*
 Challenge: Pass props to the Card component and display that data
@@ -23,17 +19,15 @@ Challenge: Pass props to the Card component and display that data
 
 export default function App() {
     // <Hero />
+    // ----- JS
+    let cardsArr = data.map(card => {
+        return <Card img={card.coverImg} rating={card.stats.rating} reviewCount={card.stats.reviewCount} location={card.location} title={card.title} price={card.price} />
+    });
+    // ----- JSX
     return (
         <div>
             <Navbar />
-            <Card
-                img={profilePic}
-                rating="5.0"
-                reviewCount={6}
-                country="USA"
-                title="Life Lessons with Katie Zaferes"
-                price={136}
-            />
+            {cardsArr}
         </div>
     )
 }
